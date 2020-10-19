@@ -1,0 +1,13 @@
+syntax = "proto3";
+package admin;
+
+import "common.proto";
+
+// 测试协议
+message Test {
+	// 请求通用的元数据头，通用结构
+	Mate mate = 1;
+	// test say hello
+	string say = 2;
+}
+

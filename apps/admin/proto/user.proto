@@ -1,0 +1,25 @@
+syntax = "proto3";
+package admin;
+
+import "common.proto";
+
+// 测试协议
+service User {
+	// 请求通用的元数据头，通用结构
+	rpc Login(LoginRequest) returns(LoginResponse){};
+}
+
+message LoginRequest{
+	Mate mate = 1;
+	string username = 2;
+	string password = 3;
+}
+
+message LoginResponse{
+	int32 code = 1;
+	string msg = 2;
+	message LoginData{
+
+	}
+}
+

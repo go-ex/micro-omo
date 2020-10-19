@@ -1,0 +1,10 @@
+syntax = "proto3";
+package admin;
+
+// 单个服务的通用结构
+message Mate {
+	// 请求id,全球唯一id，用于链路跟踪
+	int64 seqid = 1;
+	// 协议版本号（全局版本号）
+	int32 version = 2;
+}
